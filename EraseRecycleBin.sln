@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EraseResycleBin", "EraseResycleBin.csproj", "{102361A2-0F6F-4CF4-AB92-DAC639A37376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EraseRescycleBin", "EraseRescycleBin.csproj", "{6C0FD8D4-0616-4044-AF4D-F7B390E6F2D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{102361A2-0F6F-4CF4-AB92-DAC639A37376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{102361A2-0F6F-4CF4-AB92-DAC639A37376}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{102361A2-0F6F-4CF4-AB92-DAC639A37376}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{102361A2-0F6F-4CF4-AB92-DAC639A37376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0FD8D4-0616-4044-AF4D-F7B390E6F2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0FD8D4-0616-4044-AF4D-F7B390E6F2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0FD8D4-0616-4044-AF4D-F7B390E6F2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0FD8D4-0616-4044-AF4D-F7B390E6F2D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
