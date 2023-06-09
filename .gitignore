@@ -1,0 +1,37 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+*.dotnet.*
+
+# Build tooling
+*_Resharper*
+*.resharper
+[Tt]est[Rr]esult*
+
+# Rider-specific files
+.idea/
+
+# Visual Studio Code specific files
+.vscode/
+
+# Miscellaneous
+*.log
+*.swp
