@@ -10,7 +10,7 @@ namespace EraseRescycleBin
 
         static void Main(string[] args)
         {
-            SHEmptyRecycleBin(IntPtr.Zero, null, Constants.SHERB_NOCONFIRMATION 
+            SHEmptyRecycleBin(IntPtr.Zero, null!, Constants.SHERB_NOCONFIRMATION
                 | Constants.SHERB_NOPROGRESSUI | Constants.SHERB_NOSOUND);
         }
     }
