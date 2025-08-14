@@ -1,17 +1,30 @@
-﻿using System.Runtime.InteropServices;
+﻿using EraseRecycleBin;
 
-namespace EraseRescycleBin
+namespace EraseRecycleBin
 {
     class Program
     {
-
-        [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
-        static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath, uint dwFlags);
-
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            SHEmptyRecycleBin(IntPtr.Zero, null!, Constants.SHERB_NOCONFIRMATION
-                | Constants.SHERB_NOPROGRESSUI | Constants.SHERB_NOSOUND);
+            if (!OperatingSystem.IsWindows())
+            {
+                Console.Error.WriteLine("This tool requires Windows.");
+                return 1;
+            }
+
+            string? root = args.Length > 0 ? args[0] : null;
+
+            try
+            {
+                RecycleBin.Empty(root);
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.Message);
+                int code = ex.HResult != 0 ? ex.HResult : 1;
+                return code;
+            }
         }
     }
 }
